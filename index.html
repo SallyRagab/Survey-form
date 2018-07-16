@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" media="screen" type="text/css" href="style.css">
+
+    <title>Survey Form</title>
+
+  </head>
+
+  <body>
+
+    <!-- Optional Javascript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <div class="content">
+      <header>
+        <h1>Survey Form</h1>
+      </header>
+
+      <main>
+        <p>Let us know how we can improve our site</p>
+          <form method="get" action="https://crossorigin.me/https://freecodecamp.com">
+            <!-- Name -->
+            <div class="row">
+              <div class="label padding">
+                <label for="name"><span class="required">*</span>Name</label>
+              </div>
+              <div class="input">
+                <input autofocus type="text" id="name" name="name" class="inputstyle" placeholder="Enter your name" required>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="row">
+              <div class="label padding">
+                <label for="email"><span class="required">*</span>Email</label>
+              </div>
+              <div class="input">
+                <input type="email" id="email" name="email" class="inputstyle" placeholder="Enter your Email" required>
+              </div>
+            </div>
+            <!-- Age -->
+            <div class="row">
+              <div class="label padding">
+                <label for="age"><span class="required">*</span>Age</label>
+              </div>
+              <div class="input">
+                <input type="number" id="age" name="age" class="inputstyle" placeholder="Enter your age" min="1" max="125" required>
+              </div>
+            </div>
+            <!-- Role -->
+            <div class="row">
+              <div class="label">
+                <label for="role">Which option best describes<br>your current role?</label>
+              </div>
+              <div class="input">
+                <select id="role" name="role">
+                  <option disabled value>Select an option</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNot">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <!-- Recommend -->
+            <div class="row">
+              <div class="label">
+                <label for="recommend"><span class="required">*</span>How likely would you recommend<br>us to a friend?</label>
+              </div>
+              <div class="input">
+                <ul>
+                  <li><label><input type="radio" name="recommend" value="1">Definitely</label></li>
+                  <li><label><input type="radio" name="recommend" value="2">Maybe</label></li>
+                  <li><label><input type="radio" name="recommend" value="3">Not sure</label></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Like -->
+            <div class="row">
+              <div class="label">
+                <label for="likes">What do you like most about us?</label>
+              </div>
+              <div class="input">
+                <select id="likes" name="likes">
+                  <option disabled selected value>Select an option</option>
+                  <option value="challenges">Challenges</option>
+                  <option value="projects">Projects</option>
+                  <option value="community">Community</option>
+                  <option value="openSource">Open Source</option>
+                </select>
+              </div>
+            </div>
+            <!-- Improve -->
+            <div class="row">
+              <div class="label">
+                <label for="improve">Things that should be improved<br>in the future<br>(Check all that apply)</label>
+              </div>
+              <div class="input">
+                <ul>
+                  <li><label><input type="checkbox" name="improve" value="1">Front-end Projects</label></li>
+                  <li><label><input type="checkbox" name="improve" value="2">Back-end Projects</label></li>
+                  <li><label><input type="checkbox" name="improve" value="3">Data Visualization</label></li>
+                  <li><label><input type="checkbox" name="improve" value="4">Challenges</label></li>
+                  <li><label><input type="checkbox" name="improve" value="5">Open Source Community</label></li>
+                  <li><label><input type="checkbox" name="improve" value="6">Gitter help rooms</label></li>
+                  <li><label><input type="checkbox" name="improve" value="7">Videos</label></li>
+                  <li><label><input type="checkbox" name="improve" value="8">City Meetups</label></li>
+                  <li><label><input type="checkbox" name="improve" value="9">Wiki</label></li>
+                  <li><label><input type="checkbox" name="improve" value="10">Forum</label></li>
+                  <li><label><input type="checkbox" name="improve" value="11">Additional Courses</label></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Comments -->
+            <div class="row">
+              <div class="label">
+                <label for="comments">Any comments or suggestions?</label>
+              </div>
+              <div class="input">
+                <textarea type="text" id="comments" name="comments" class="inputstyle" placeholder="Enter your comments here..."></textarea>
+              </div>
+            </div>
+            <!-- Submit -->
+            <div class="button">
+              <button class="btn btn-lg" type="submit">Submit</button>
+            </div>
+          </form>
+      </main>
+    </div>
+  </body>
+</html>
