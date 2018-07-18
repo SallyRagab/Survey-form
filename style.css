@@ -16,9 +16,9 @@ body {
 
 .content {
   background-color: #fff;
-  width: 60%;
+  width: 70%;
   margin: 70px auto;
-  padding: 50px;
+  padding: 50px 20px;
   border-radius: 4px;
   box-shadow: 10px 10px 70px #210B3B;
 }
@@ -42,7 +42,7 @@ p {
 .inputstyle {
   padding: 5px;
   margin-left: 10px;
-  width: 80%;
+  width: 70%;
   font-size: 14px;
 }
 
@@ -118,6 +118,18 @@ button:hover {
   }
   .input {
     display: block;
+    width: 100%;
+  }
+  .inputstyle {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inputstyle {
     width: 80%;
+  }
+  .content {
+    padding-left: 10px;
   }
 }
